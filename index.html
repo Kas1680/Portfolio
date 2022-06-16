@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Favicon-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Main Import-->
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.bars li .bar').each(function(key, bar){
+                    var percentage = $(this).data('percentage') * 4.50 ;
+                    $(this).animate({
+                        'height': percentage + 'px'
+                    }, 1000);
+                })
+            });
+    </script>
+
+    <title>Caesar Lau</title>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div id="mainCol1">
+        <!--Navigation Bar-->
+        <div class="sidebar">
+            <div class="nav__logo">
+                <p>Kas</p>
+            </div>
+            <hr></hr>
+            <nav class="nav__containers">
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class='bx bx-home'></i>
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user'></i>
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-bar-chart-alt-2'></i>
+                                Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class='bx bx-briefcase-alt-2'></i>
+                                Projects
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <hr></hr> 
+                <div class="contact">
+                    <p>Caesar</p>
+                    <br>
+                    <a class="email" href="mailto: lau.caesar@gmail.com">Contact Me</a>
+                    <div class="profContainer2">
+                        <br><br>
+                        <a class="proLink" href="https://www.linkedin.com/in/caesar-lau-67035519/" target="_blank">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        
+                        <a class="proLink" href="https://github.com/Kas1680" target="_blank">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </div>
+            
+            </nav>
+        </div>
+    </div>
+    <!--Content-->
+    
+
+    <div class="mainCol2">
+        <section id="home">
+            <br><br>
+            <div class="img_wrap">
+                <img src="assets/img/webp/focus-modified.webp">
+            </div>
+            
+            <div class="home_text">
+                <h1 id="t1">Caesar Lau</h1>
+                <br>
+                <p class="description">I am a Software Engineer Intern currently
+                br>pursuing my Computer Science Degree.</p>
+            </div>
+            
+            <div class="profContainer">
+                <br><br>
+                <a class="proLink" href="https://www.linkedin.com/in/caesar-lau-67035519/" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                
+                <a class="proLink" href="https://github.com/Kas1680" target="_blank">
+                    <i class='bx bxl-github' ></i>
+                </a>
+            </div>
+
+            <div class="button_wrap"><br>
+                <a href="https://github.com/Kas1680/Portfolio/blob/main/Lau%20Caesar%20Resume.pdf">
+                    <button id="download" type="submit">Download Resume</button>
+            </a></div>
+            
+        </section>
+
+        <section id="about">
+          
+            <div class="row">
+                <br><br>
+                <div class="col1">
+                    <h1 id="t2">About Caesar</h1><br><br><br>
+                    <h3>Hi! My name is Caesar </h3><br>
+
+                    <p class="description">I am a software engineering intern entering my third year of
+                    Computer Science program</p><br>
+                    <p class="description">I am from Hong Kong</p><br><br><br>
+                    <hr><br>
+                    <h3 id="t2">Education</h3><br>
+                    <p class="description">University Of British Columbia: BCom</p><br>
+                    <p class="description">Langara College: Associate of Computer Science</p>
+                </div>
+                <div class="col2">
+                    <img id="back" src="assets/img/webp/back.webp">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+                <div class="chartContainer">
+                    <div class="skillChart">
+                        <ul class="ref">
+                            <li><span><h2>Master:</h2>Awesomeness 100%</span></li>
+                            <li style="margin-left:40px"><span><h2>Senior:</h2> I am comfortable</span></li>
+                            <li><span><h2>Medium:</h2> Trying to improve</span></li>
+                            <li style="margin-left:40px"><span><h2>Junior:</h2>New Tech</span></li>
+                            <li><span><h2>Umm:</h2>Next Question Please</span></li>
+                        </ul>
+                        <ul class="bars">
+                            <li><div class="bar" data-percentage="30"></div><span>HTML/CSS/Javascript</span></li>
+                            <li><div class="bar" data-percentage="35"></div><span>C++</span></li>
+                            <li><div class="bar" data-percentage="35"></div><span>Java</span></li>
+                            <li><div class="bar" data-percentage="25"></div><span>Bash</span></li>
+                            <li><div class="bar" data-percentage="15"></div><span>Python</span></li>
+                            <li><div class="bar" data-percentage="25"></div><span>GitHub</span></li>
+                            <li><div class="bar" data-percentage="100"></div><span>Cooking</span></li>
+                        </ul>
+                </div>
+                </div>
+        </section>
+
+        <section id="projects">
+            <div class="projContainer">
+                <h1 id="t2">Projects</h1>
+
+                <div class="prow">
+                    <div class="pcol">
+                        <a href="https://github.com/Kas1680/Java-WhackAMice/tree/main" target="_blank">
+                            <img class="proPhoto" src="assets/img/webp/tuck.webp">
+                            <span class="projHover" data-hover="Java WhackAMice"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="prow">
+                    <div class="pcol">
+                        <a href="https://github.com/Kas1680/Java-TicTacToe" target="_blank">
+                            <img class="proPhoto" src="assets/img/webp/cutecat.webp">
+                            <span class="projHover" data-hover="Java Tic-Tac-Toe"></span>
+                        </a></div>
+                </div>
+                <div class="prow">
+                    <a href="https://henrydao00.github.io/cpsc2350-project-group8/Implementation/index.html" target="_blank">
+                        <img class="proPhoto" src="assets/img/webp/three-cat.webp">
+                        <span class="projHover" data-hover="TrailSquirrel"></span>
+                    </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,63 @@
+<!- CAESAR LAU 100090908 ->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CPSC 1045 Assignment 10 Bubble Tea Ordering</title>
+	<script src="a10.js" /defer></script>
+	<style>
+		fieldset{
+			display: inline;
+		}
+		#label1{
+			font-size: 24px;
+		}
+		td{
+			border: 1px solid black;
+			padding: 4px;
+		}
+		table {
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>CPSC 1045 Bubble Tea Ordering</h1>
+	<h2>Select your tea type:</h2>
+	<form name="teaform">
+		<input type="radio" name="teatype" id="red" class="teabase" checked="checked" value="Red">
+		<label for="red">Red</label><br><br>
+		<input type="radio" name="teatype" id="green" class="teabase" value="Green">
+		<label for="green">Green</label><br><br>
+		<input type="radio" name="teatype" id="black" class="teabase" value="Black">
+		<label for="black">Black</label>
+		<br><br>
+
+	<h2>Select your toppings</h2>
+		<input type="checkbox" name="toppings" id="pearl">
+		<label for="pearls">Pearls</label><br><br>
+		<input type="checkbox" name="toppings" id="mstar">
+		<label for="mstar">Mango Stars</label><br><br>
+		<input type="checkbox" name="toppings" id="gjelly">
+		<label for="gjelly">Grass Jelly</label><br><br>
+		<input type="checkbox" name="toppings" id="cjelly">
+		<label for="cjelly">Coconut Jelly</label><br><br>
+
+	<input type="button" value="Add Topping" id="addtop">
+	<input type="button" value="Remove Topping" id="retop">
+	<br><br>
+	<div id="currentTop">Current Toppings:</div>
+	<br>
+	<h2>Would you like milk?</h2>
+	<select name="gotmilk?" id="gotmilk">
+		<option value="No">No</option>
+		<option value="Yes">Yes</option>
+	</select>
+	<br>
+	<input type="button" value="Add Drink" id="addDrink">
+	<input type="button" value="Remove Drink" id="redrink">
+	<input type="button" value="Empty Order" id="empty">
+	<br><br>
+	<div id="costTable"></div>
+</body>
+</html>
